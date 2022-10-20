@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hostApp:AcceleratedHostProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hostApp="http://www.xilinx.com/acceleration/hostApplication" name="example_vadd" location="/home/wlwll6873/vitis_example_my/example_vadd" platform="/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm" platformUID="xilinx:u280:xdma:201920.3" systemProject="example_vadd_system" sysConfig="config0_0" cpu="x86" cpuInstance="x86" os="Linux">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.sw_emu.x86.449826201">
+    <configBuildOptions xsi:type="hostApp:HostApplicationOptions"/>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hw_emu.x86.824981696">
+    <configBuildOptions xsi:type="hostApp:HostApplicationOptions" target="hw_emu"/>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hw.x86.711903842">
+    <configBuildOptions xsi:type="hostApp:HostApplicationOptions" target="hw"/>
+  </configuration>
+</hostApp:AcceleratedHostProject>

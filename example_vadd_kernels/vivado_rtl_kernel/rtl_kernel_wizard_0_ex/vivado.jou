@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Jun 30 14:25:22 2022
+# Process ID: 30251
+# Current directory: /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex
+# Command line: vivado -notrace -source /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/vivado_rtl_kernel.gen/sources_1/ip/rtl_kernel_wizard_0/rtl_kernel_wizard_0_ex.tcl
+# Log file: /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/vivado.log
+# Journal file: /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/vivado_rtl_kernel.gen/sources_1/ip/rtl_kernel_wizard_0/rtl_kernel_wizard_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 32
+wait_on_run synth_1
+# --------------------------------------------
+# Start: RTL Kernel Packaging of Sources
+#
+source -notrace /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/package_kernel.tcl
+# Packaging project
+package_project /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0 mycompany.com kernel rtl_kernel_wizard_0
+package_xo  -xo_path /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/exports/rtl_kernel_wizard_0.xo -kernel_name rtl_kernel_wizard_0 -ip_directory /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0 -kernel_xml /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/kernel.xml
+# Complete: RTL Kernel Packaging of Sources
+# --------------------------------------------
+file mkdir /home/wlwll6873/vitis_example_my/example_vadd_kernels/src/vitis_rtl_kernel/rtl_kernel_wizard_0
+close_project

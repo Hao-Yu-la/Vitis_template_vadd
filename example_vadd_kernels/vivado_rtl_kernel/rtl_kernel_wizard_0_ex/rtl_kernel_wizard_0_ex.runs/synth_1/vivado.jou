@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Jun 30 17:56:56 2022
+# Process ID: 101662
+# Current directory: /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1
+# Command line: vivado -log rtl_kernel_wizard_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rtl_kernel_wizard_0.tcl
+# Log file: /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/rtl_kernel_wizard_0.vds
+# Journal file: /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source rtl_kernel_wizard_0.tcl -notrace

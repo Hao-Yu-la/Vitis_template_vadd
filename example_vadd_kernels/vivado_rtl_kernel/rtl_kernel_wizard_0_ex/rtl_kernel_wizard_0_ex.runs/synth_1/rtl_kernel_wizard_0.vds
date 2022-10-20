@@ -1,0 +1,524 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Jun 30 17:56:56 2022
+# Process ID: 101662
+# Current directory: /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1
+# Command line: vivado -log rtl_kernel_wizard_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rtl_kernel_wizard_0.tcl
+# Log file: /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/rtl_kernel_wizard_0.vds
+# Journal file: /home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source rtl_kernel_wizard_0.tcl -notrace
+Command: synth_design -top rtl_kernel_wizard_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 102022
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3251.035 ; gain = 186.688 ; free physical = 2418 ; free virtual = 54999
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0.v:7]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_control_s_axi' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_control_s_axi.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_control_s_axi' (1#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example.sv:5]
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 512 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_vadd' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:6]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_XFER_SIZE_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDER_BIT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_axi_read_master' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_axi_read_master.sv:52]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_XFER_SIZE_WIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_OUTSTANDING bound to: 8 - type: integer 
+	Parameter C_INCLUDE_DATA_FIFO bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 513 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 2 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 513 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (2#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (2#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:490]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (3#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (4#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (4#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (5#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (5#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (5#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (6#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (7#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 20 - type: integer 
+	Parameter C_INIT bound to: 20'b00000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter' (8#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized0' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 4 - type: integer 
+	Parameter C_INIT bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized0' (8#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_axi_read_master' (9#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_axi_read_master.sv:52]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_adder' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_adder.v:11]
+	Parameter C_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_ADDER_BIT_WIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_CLOCKS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2343]
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter FIFO_MEMORY_TYPE bound to: distributed - type: string 
+	Parameter PACKET_FIFO bound to: false - type: string 
+	Parameter FIFO_DEPTH bound to: 32 - type: integer 
+	Parameter TDATA_WIDTH bound to: 512 - type: integer 
+	Parameter TID_WIDTH bound to: 1 - type: integer 
+	Parameter TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1002 - type: string 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 27 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 5 - type: integer 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (10#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (10#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (10#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (10#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized6' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized6' (10#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (10#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (11#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2343]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_adder' (12#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_adder.v:11]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_axi_write_master' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_axi_write_master.sv:42]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_XFER_SIZE_WIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_OUTSTANDING bound to: 32 - type: integer 
+	Parameter C_INCLUDE_DATA_FIFO bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized0' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+	Parameter FIFO_MEMORY_TYPE bound to: distributed - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 32 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (12#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (12#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (12#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized0' (12#1) [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1951]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized1' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 6 - type: integer 
+	Parameter C_INIT bound to: 6'b111111 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized1' (12#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized2' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_INIT bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized2' (12#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized3' [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 6 - type: integer 
+	Parameter C_INIT bound to: 6'b100000 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized3' (12#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_axi_write_master' (13#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_axi_write_master.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_vadd' (14#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example' (15#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0' (16#1) [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3312.004 ; gain = 247.656 ; free physical = 1544 ; free virtual = 54127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3329.816 ; gain = 265.469 ; free physical = 2390 ; free virtual = 54972
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3329.816 ; gain = 265.469 ; free physical = 2390 ; free virtual = 54972
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3329.816 ; gain = 0.000 ; free physical = 2368 ; free virtual = 54950
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_ooc.xdc]
+Finished Parsing XDC File [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_ooc.xdc]
+Parsing XDC File [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+Finished Parsing XDC File [/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rtl_kernel_wizard_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rtl_kernel_wizard_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rtl_kernel_wizard_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rtl_kernel_wizard_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 4 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3547.129 ; gain = 0.000 ; free physical = 2234 ; free virtual = 54816
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3551.098 ; gain = 3.969 ; free physical = 2234 ; free virtual = 54816
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3551.098 ; gain = 486.750 ; free physical = 2365 ; free virtual = 54948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3551.098 ; gain = 486.750 ; free physical = 2365 ; free virtual = 54948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst_example/inst_example_vadd_m00_axi/inst_adder/inst_xpm_fifo_axis/\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_example/inst_example_vadd_m00_axi/inst_adder/inst_xpm_fifo_axis. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_example/inst_example_vadd_m00_axi/inst_axi_read_master/\gen_fifo.inst_rd_xpm_fifo_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_example/inst_example_vadd_m00_axi/inst_axi_write_master/\gen_fifo.inst_xpm_fifo_sync . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 3551.098 ; gain = 486.750 ; free physical = 2365 ; free virtual = 54948
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'rtl_kernel_wizard_0_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'rtl_kernel_wizard_0_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'rtl_kernel_wizard_0_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'rtl_kernel_wizard_0_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3551.098 ; gain = 486.750 ; free physical = 2353 ; free virtual = 54937
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 16    
+	   2 Input   26 Bit       Adders := 2     
+	   4 Input   10 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 1     
+	   4 Input    9 Bit       Adders := 5     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   4 Input    6 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 5     
+	   4 Input    5 Bit       Adders := 8     
+	   3 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 11    
++---Registers : 
+	              644 Bit    Registers := 2     
+	              513 Bit    Registers := 2     
+	              512 Bit    Registers := 4     
+	               64 Bit    Registers := 5     
+	               32 Bit    Registers := 5     
+	               26 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 14    
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 96    
++---RAMs : 
+	             256K Bit	(512 X 513 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 99    
+	   4 Input    2 Bit        Muxes := 21    
+	   2 Input    1 Bit        Muxes := 69    
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+RAM ("\inst_example/inst_example_vadd_m00_axi/inst_axi_read_master/gen_fifo.inst_rd_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg ") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3551.098 ; gain = 486.750 ; free physical = 2335 ; free virtual = 54926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                       | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\inst_example/inst_example_vadd_m00_axi/inst_axi_read_master/gen_fifo.inst_rd_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 513(READ_FIRST)  | W |   | 512 x 513(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      |                 | 
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                     | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|\inst_example/inst_example_vadd_m00_axi/inst_adder/inst_xpm_fifo_axis /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                      | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 644             | RAM32M16 x 46  | 
+|\inst_example/inst_example_vadd_m00_axi/inst_axi_write_master/gen_fifo.inst_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 512             | RAM32M16 x 37  | 
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 3807.723 ; gain = 743.375 ; free physical = 1821 ; free virtual = 54413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 3856.762 ; gain = 792.414 ; free physical = 1795 ; free virtual = 54387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                       | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\inst_example/inst_example_vadd_m00_axi/inst_axi_read_master/gen_fifo.inst_rd_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 513(READ_FIRST)  | W |   | 512 x 513(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      |                 | 
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                     | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|\inst_example/inst_example_vadd_m00_axi/inst_adder/inst_xpm_fifo_axis /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                      | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 644             | RAM32M16 x 46  | 
+|\inst_example/inst_example_vadd_m00_axi/inst_axi_write_master/gen_fifo.inst_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 512             | RAM32M16 x 37  | 
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 3864.770 ; gain = 800.422 ; free physical = 1791 ; free virtual = 54383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 3864.770 ; gain = 800.422 ; free physical = 1791 ; free virtual = 54383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 3864.770 ; gain = 800.422 ; free physical = 1791 ; free virtual = 54383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 3864.770 ; gain = 800.422 ; free physical = 1772 ; free virtual = 54364
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 3864.770 ; gain = 800.422 ; free physical = 1772 ; free virtual = 54364
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 3864.770 ; gain = 800.422 ; free physical = 1789 ; free virtual = 54381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 3864.770 ; gain = 800.422 ; free physical = 1789 ; free virtual = 54380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    88|
+|2     |LUT1     |    84|
+|3     |LUT2     |    92|
+|4     |LUT3     |   242|
+|5     |LUT4     |    67|
+|6     |LUT5     |    86|
+|7     |LUT6     |    74|
+|8     |RAM32M16 |    83|
+|9     |RAMB18E2 |     1|
+|10    |RAMB36E2 |     7|
+|11    |FDRE     |  3842|
+|12    |FDSE     |    39|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 3864.770 ; gain = 800.422 ; free physical = 1790 ; free virtual = 54382
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 3864.770 ; gain = 579.141 ; free physical = 1827 ; free virtual = 54419
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 3864.777 ; gain = 800.422 ; free physical = 1827 ; free virtual = 54419
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3875.738 ; gain = 0.000 ; free physical = 1916 ; free virtual = 54507
+INFO: [Netlist 29-17] Analyzing 171 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3972.676 ; gain = 0.000 ; free physical = 1809 ; free virtual = 54401
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 83 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 83 instances
+
+Synth Design complete, checksum: 2c799a3c
+INFO: [Common 17-83] Releasing license: Synthesis
+105 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:02 . Memory (MB): peak = 3972.676 ; gain = 1352.688 ; free physical = 1969 ; free virtual = 54561
+INFO: [Common 17-1381] The checkpoint '/home/wlwll6873/vitis_example_my/example_vadd_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/rtl_kernel_wizard_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rtl_kernel_wizard_0_utilization_synth.rpt -pb rtl_kernel_wizard_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 30 17:58:10 2022...
